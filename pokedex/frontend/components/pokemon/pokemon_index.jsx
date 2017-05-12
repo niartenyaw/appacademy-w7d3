@@ -16,13 +16,13 @@ class PokemonIndex extends React.Component {
 
   render() {
     return (
-      <section className="poke-index">
+      <nav className="poke-index">
         <ul>
           {this.props.pokemon.map(
             poke => <PokemonIndexItem key={poke.id} pokemon={poke} />
           )}
         </ul>
-      </section>
+      </nav>
     );
   }
 }

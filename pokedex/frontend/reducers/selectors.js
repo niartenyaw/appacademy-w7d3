@@ -1,5 +1,5 @@
-import _ from 'lodash';
+import values from 'lodash/values';
 
 export const selectAllPokemon = state => {
-  return _.values(state.pokemon);
+  return Object.values(state.pokemon);
 };
